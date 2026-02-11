@@ -1,0 +1,19 @@
+# @package training
+
+# Training configuration
+total_timesteps: 100000
+eval_freq: 10000
+eval_episodes: 10
+save_freq: 50000
+log_freq: 1000
+
+# Checkpointing
+max_checkpoints: 5
+checkpoint_prefix: "checkpoint"
+
+# Monitoring
+use_tensorboard: true
+tensorboard_log_dir: "./tensorboard_logs"
+use_wandb: false
+wandb_project: "rl-resource-allocation"
+wandb_entity: null

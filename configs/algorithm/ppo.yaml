@@ -1,0 +1,19 @@
+# @package algorithm
+
+_target_: src.algorithms.AlgorithmFactory.create_agent
+
+# Algorithm name
+algorithm: "ppo"
+
+# Algorithm-specific configuration
+algorithm_config:
+  learning_rate: 3e-4
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  value_loss_coef: 0.5
+  entropy_coef: 0.01
+  max_grad_norm: 0.5
+  ppo_epochs: 4
+  batch_size: 64
+  device: "auto"

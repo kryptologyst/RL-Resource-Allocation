@@ -1,0 +1,20 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - override /algorithm: dqn
+  - override /env: resource_allocation
+  - override /training: default
+
+# Experiment configuration
+experiment_name: "resource_allocation_experiment"
+output_dir: "./outputs"
+seed: 42
+device: "auto"
+
+# Logging
+log_level: "INFO"
+log_file: null
+
+# Reproducibility
+deterministic: true
